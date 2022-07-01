@@ -7,7 +7,7 @@ import emailjs from '@emailjs/browser';
 const sendEmail = (e) => {
     e.preventDefault();
     
-    emailjs.sendForm('service_1js5vfu', 'template_jgomw38', e.target, 'Zpai1ApmgRgjE_zRV')
+    emailjs.sendForm('hidden-code', 'hidden-code', e.target, 'hidden-code')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
