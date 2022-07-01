@@ -1,0 +1,91 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@layer components {
+    .sidebar-icon {
+        @apply relative flex items-center justify-center z-10 h-12 w-12 mt-2 mb-2 mx-auto bg-gray-700 dark:bg-gray-800 text-blue-400 dark:text-green-500 hover:bg-red-500 hover:text-white dark:hover:text-white dark:hover:bg-green-600 rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear cursor-pointer;
+    }
+
+    .sidebar-tooltip {
+        @apply absolute w-auto p-2 m-2 min-w-max left-16 rounded-md shadow-md text-white bg-gray-700 dark:bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left;
+    }
+
+    .top-navigation {
+        @apply relative flex items-center justify-evenly bg-gray-500 dark:bg-gray-900 w-full h-16 m-0 transition-all duration-300 ease-linear;
+    }
+
+    .top-navigation-icon {
+        @apply text-yellow-400 dark:text-gray-300
+    }
+
+    .top-navigation-tooltip {
+        @apply absolute -translate-x-16 translate-y-5 w-auto p-2 m-2 min-w-max px-6 py-2.5 rounded-md shadow-md text-white bg-gray-700 dark:bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-top;
+    }
+
+    .bottom-navigation {
+        @apply flex items-center justify-evenly bg-gray-500 dark:bg-gray-900 w-full h-20 m-0 transition-all duration-300 ease-linear;
+    }
+
+    .bottom-navigation-icon {
+        @apply hover: cursor-pointer text-yellow-400 dark:text-gray-300
+    }
+
+    .bottom-navigation-tooltip {
+        @apply absolute -translate-x-16 translate-y-5 w-auto p-2 m-2 min-w-max px-6 py-2.5 rounded-md shadow-md text-white bg-gray-700 dark:bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-top;
+    }
+
+    .googlemaps {
+        @apply absolute z-50 h-1/2 w-1/2 bg-gray-300 dark:bg-gray-700 left-1/4 transition-all duration-300 ease-linear
+    }
+
+    .bottombar {
+        @apply inline-flex items-center justify-evenly bottom-0 bg-gray-500 dark:bg-gray-900 w-full h-20 m-0 transition-all duration-300 ease-linear;
+    }
+
+    .webviewer {
+        @apply flex max-h-screen min-h-fit h-screen;
+    }
+
+    .PW-example1 {
+        @apply absolute left-1/2 top-1/4 w-3/12 h-1/5 bg-slate-500
+    }
+
+    .PW-icons {
+        @apply inline-block bg-red-700 fill-black
+    }
+
+    .PW-button {
+        @apply inline bg-gray-800 text-green-500 p-2 space-x-10 rounded-md w-1/2
+    }
+
+
+    .previous-work-example2 {
+        @apply absolute left-1/2 top-2/4
+    }
+
+    .title-text {
+        @apply inline-flex w-36 h-12 dark:bg-gray-800 items-center justify-center rounded-3xl shadow-md text-white text-xs font-bold hover:bg-red-500 hover:text-white hover:rounded-xl transition-all duration-300 ease-linear cursor-default bg-gray-700 dark:hover:text-white dark:hover:bg-green-600
+    }
+
+    .contact-me-form {
+        @apply w-1/3 text-xl font-semibold bg-gray-700 dark:bg-gray-800 rounded-3xl text-white text-center content-center inline-grid
+    }
+}
